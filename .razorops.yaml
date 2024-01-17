@@ -1,4 +1,4 @@
-# razorops.yml
+# razorops.yaml
 version: v2
 jobs:
   build:
