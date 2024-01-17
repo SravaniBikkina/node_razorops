@@ -1,5 +1,5 @@
 # razorops.yml
-version: 1
+version: v2
 jobs:
   build:
     runs-on: ubuntu-latest
