@@ -1,12 +1,7 @@
-global:
-  runner:
-    os_image: ubuntu
-
-tasks:
-  build-docker-image:
-    steps:
-      - checkout
-      - docker/build:
-          image: sravanibikkina/node
-          dockerfile: Dockerfile
-          context: .
+FROM node:carbon
+WORKDIR /usr/src/app
+COPY package*.json ./
+RUN npm install
+COPY . .
+EXPOSE 8080
+CMD [ "npm", "start" ]
