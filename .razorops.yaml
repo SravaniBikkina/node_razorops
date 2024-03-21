@@ -10,6 +10,6 @@ tasks:
     steps:
       - checkout
       - docker/build:
-          image: sravanibikkina/pythoncicd
+          image: sravanibikkina/node
           dockerfile: Dockerfile
           context: .
