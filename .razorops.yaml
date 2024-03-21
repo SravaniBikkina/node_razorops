@@ -2,4 +2,12 @@ version: v2
 global:
   runner:
   os_image: ubuntu
-  
+
+tasks:
+  build-docker-image:
+    steps:
+      - checkout
+      - docker/build:
+          image: sravanibikkina/pythoncicd
+          dockerfile: Dockerfile
+          context: .
