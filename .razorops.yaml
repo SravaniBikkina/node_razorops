@@ -20,4 +20,4 @@ tasks:
            image: sravanibikkina/node
            command:
            - docker login
-           - docker push sravanibikkina/node:latest
+           - docker push sravanibikkina/sravanibikkina/node:latest
