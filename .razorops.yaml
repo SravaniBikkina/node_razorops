@@ -14,11 +14,6 @@ tasks:
           image: sravanibikkina/node
           dockerfile: Dockerfile
           context: .
-  login-to-dockerhub:
-     steps:
-       - docker login:
-           command: 
-            echo "$DOCKERHUB_PASSWORD" | docker login -u "$DOCKERHUB_USERNAME" --password-stdin
   push-to-dockerhub:
           image: sravanibikkina/node
           command:
