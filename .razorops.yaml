@@ -17,7 +17,6 @@ tasks:
   push-to-dockerhub:
      steps:
        - docker/push:
-           image: sravanibikkina/node
            command:
            - docker login
            - docker push sravanibikkina/node:latest
