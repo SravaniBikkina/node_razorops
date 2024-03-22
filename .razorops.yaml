@@ -14,7 +14,9 @@ tasks:
           image: sravanibikkina/node
           dockerfile: Dockerfile
           context: .
-      - docker/push:
+  push-to-dockerhub:
+     steps:
+       - docker/push:
            image: sravanibikkina/node
            command:
            - docker push sravanibikkina/node:latest
